@@ -1,0 +1,18 @@
+/* Enter your custom styles here */
+.noArrow .sapMPopoverArr {
+    display: none;
+}
+.pointer {
+    cursor: pointer;
+}
+.roundBorder {
+    border-radius: 2%;
+}
+.sapMCustomTile {
+    width: 15em;
+    height: 15em;
+}
+.paddingTopBottom .sapMLnk {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}

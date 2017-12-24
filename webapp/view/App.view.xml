@@ -1,0 +1,35 @@
+<mvc:View 
+    controllerName="com.sap.grish.test.Tiles.controller.App" 
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:p="openui5.parallax"
+	xmlns="sap.m"
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" showHeader="false">
+				<content>
+				    <TileContainer
+                      id="container"
+                      tileDelete="handleTileDelete"
+                      tiles="{/TileCollection}">
+                    <!--<l:HorizontalLayout allowWrapping="true" content="{/TileCollection}">-->
+                      <CustomTile
+                        id="idTile"
+                        class="sapUiContentPadding pointer"
+                        press="handlePopoverPress">
+                          <content>
+                              <l:HorizontalLayout allowWrapping="true">
+                                  <Text text="{title}" />
+                                  <Text id="idDummyText" text="" />
+                              </l:HorizontalLayout>
+                          </content>
+                      </CustomTile>
+                    <!--</l:HorizontalLayout>-->
+                    </TileContainer>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
